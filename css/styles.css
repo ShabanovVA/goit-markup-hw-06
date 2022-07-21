@@ -680,7 +680,6 @@ section.hero {
   height: 50px;
   padding: 0;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -915,12 +914,74 @@ section.hero {
 
 .btn-modal {
   position: absolute;
+  display: flex;
   width: 30px;
   height: 30px;
   left: 490px;
   top: 8px;
   border-radius: 30px;
+  align-items: center;
+  cursor: pointer;
 
   background-color: var(--main-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  fill: var(--logo-black-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover .icon-close,
+.btn-modal:focus .icon-close {
+  fill: var(--accent-color);
+}
+
+.modal-form {
+  width: 528px;
+  padding: 40px;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.user-contacts {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.user-contacts:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  padding: 12px 16px;
+
+  color: rgba(117, 117, 117, 0.5);
 }
