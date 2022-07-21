@@ -590,7 +590,6 @@ section.hero {
 
 .footer-login {
   margin-left: 70px;
-  /* margin-top: 12px; */
   height: 80px;
 }
 
@@ -643,7 +642,6 @@ section.hero {
   width: 570px;
   height: 86px;
   margin-left: 93px;
-  /* margin-top: 12px; */
 
   align-items: flex-end;
 }
@@ -710,7 +708,7 @@ section.hero {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url(/images/icon_send.svg);
+  background-image: url(../images/icon_send.svg);
 }
 
 /* Button */
