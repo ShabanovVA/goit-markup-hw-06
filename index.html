@@ -309,10 +309,8 @@
         </div>
       </div>
       <form class="footer-subscribe-form">
-        <div class="footer-form-field">
-          <label for="user-email-link" class="footer-label">подпишитесь на рассылку</label>
-          <input type="email" name="email" id="user-email-link" placeholder="E-mail" class="footer-input" />
-        </div>
+        <label class="footer-label">подпишитесь на рассылку<input type="email" name="email" placeholder="E-mail"
+            class="footer-input" /></label>
         <button type="submit" class="button-footer">Подписаться</button>
       </form>
     </div>
@@ -322,24 +320,19 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <button class="btn-modal" data-modal-close><svg class="icon-close">
+          <use href="./images/sprites.svg#icon-close"></use>
+        </svg></button>
       <form class="modal-form">
-        <button class="btn-modal" data-modal-close><svg class="icon-close">
-            <use href="./images/sprites.svg#icon-close"></use>
-          </svg></button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="user-contacts"><label for="user-name" class="modal-text">Имя</label><input type="text" name="name"
-            id="user-name" autofocus /></div>
-        <div class="user-contacts"><label for="user-tel" class="modal-text">Телефон</label><input type="tel" name="tel"
-            id="user-tel" /></div>
-        <div class="user-contacts"><label for="user-email" class="modal-text">Почта</label><input type="email"
-            name="email" id="user-email" /></div>
-        <div class="user-contacts"><label for="user-textarea" class="modal-text">Комментарий</label
-            class="modal-text"><textarea name="text" id="user-textarea" placeholder="Введите текст"></textarea></div>
-        <div class="user-agreement"><input type="checkbox" name="agreement" value="agree" id="user-agreement"
-            class="modal-agreement" /><label for="user-agreement">Соглашаюсь с рассылкой и принимаю <a href=""
-              class="agreement-link">Условия
-              договора</a></label>
-        </div>
+        <label class="user-contacts">Имя<input type="text" name="name" autofocus /></label>
+        <label class="user-contacts">Телефон<input type="tel" name="tel" /></label>
+        <label class="user-contacts">Почта<input type="email" name="email" /></label>
+        <label class="user-contacts">Комментарий<textarea name="text" id="user-textarea"
+            placeholder="Введите текст"></textarea></label>
+        <label class="user-agreement"><input type="checkbox" name="agreement" value="agree" />Соглашаюсь с рассылкой и
+          принимаю <a href="" class="agreement-link">Условия
+            договора</a></label>
         <button type="submit" class="button-modal-submit">Отправить</button>
       </form>
     </div>
