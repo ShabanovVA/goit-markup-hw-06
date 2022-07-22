@@ -335,9 +335,12 @@
             name="email" id="user-email" /></div>
         <div class="user-contacts"><label for="user-textarea" class="modal-text">Комментарий</label
             class="modal-text"><textarea name="text" id="user-textarea" placeholder="Введите текст"></textarea></div>
-        <div><label for="user-agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label><input
-            type="checkbox" name="agreement" id="user-agreement" class="modal-agreement" /></div>
-        <button type="submit">Отправить</button>
+        <div class="user-agreement"><input type="checkbox" name="agreement" value="agree" id="user-agreement"
+            class="modal-agreement" /><label for="user-agreement">Соглашаюсь с рассылкой и принимаю <a href=""
+              class="agreement-link">Условия
+              договора</a></label>
+        </div>
+        <button type="submit" class="button-modal-submit">Отправить</button>
       </form>
     </div>
   </div>
