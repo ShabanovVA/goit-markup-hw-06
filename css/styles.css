@@ -1013,7 +1013,7 @@ textarea {
 }
 .user-agreement {
   width: 428px;
-  display: block;
+  display: inline-block;
   margin: 10px 0 30px 0;
   text-align: center;
 
