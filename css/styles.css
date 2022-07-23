@@ -1023,10 +1023,10 @@ textarea {
 }
 
 .user-agreement {
-  width: 428px;
   display: inline-block;
-  margin: 10px 0 30px 0;
-  text-align: center;
+  padding: 0;
+  margin: 10px 0 30px 37px;
+  width: 428px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1088,4 +1088,36 @@ textarea {
 .user-contacts:focus-within > .user-contacts-input,
 .user-contacts:focus-within > .user-contacts-textarea {
   outline-color: var(--accent-color);
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-icon-checkbox {
+  position: absolute;
+  display: inline-block;
+  top: 442px;
+  left: 52px;
+
+  width: 16px;
+  height: 15px;
+
+  border: 1px solid var(--logo-black-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .modal-icon-checkbox {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
