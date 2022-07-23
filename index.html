@@ -325,11 +325,17 @@
         </svg></button>
       <form class="modal-form">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <label class="user-contacts">Имя<input type="text" name="name" autofocus /></label>
-        <label class="user-contacts">Телефон<input type="tel" name="tel" /></label>
-        <label class="user-contacts">Почта<input type="email" name="email" /></label>
-        <label class="user-contacts">Комментарий<textarea name="text" id="user-textarea"
-            placeholder="Введите текст"></textarea></label>
+        <label class="user-contacts">Имя<svg class="modal-icon-person">
+            <use href="./images/sprites.svg#icon-person"></use>
+          </svg><input type="text" name="name" autofocus class="user-contacts-input" /></label>
+        <label class="user-contacts">Телефон<svg class="modal-icon-phone">
+            <use href="./images/sprites.svg#icon-phone"></use>
+          </svg><input type="tel" name="tel" class="user-contacts-input" /></label>
+        <label class="user-contacts">Почта<svg class="modal-icon-email">
+            <use href="./images/sprites.svg#icon-email"></use>
+          </svg><input type="email" name="email" class="user-contacts-input" /></label>
+        <label class="user-contacts">Комментарий<textarea name="text" placeholder="Введите текст"
+            class="user-contacts-textarea"></textarea></label>
         <label class="user-agreement"><input type="checkbox" name="agreement" value="agree" />Соглашаюсь с рассылкой и
           принимаю <a href="" class="agreement-link">Условия
             договора</a></label>
